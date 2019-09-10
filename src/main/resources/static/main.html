@@ -77,10 +77,11 @@
 			el:"#app",
 			data:{
 				str1:localStorage.getItem("shijuanshuliang"),
-				str2:  localStorage.getItem("timushuliang")
+				str2:localStorage.getItem("timushuliang")
 			},
 			methods:{
 				changes:function(str){
+				    console.log(str);
                     localStorage.setItem("kaoshitpid",-1);
 					window.top.vue.change(str);
 				},
